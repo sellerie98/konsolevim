@@ -1,2 +1,7 @@
 #!/bin/bash
-konsole -e "vim $1"
+if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/plasma" ]]
+	then 	
+		konsole -e "vim $1 $2"
+if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/xfce" ]]
+		xfce4-terminal -e "vim $1 $2"
+	fi
