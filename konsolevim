@@ -7,3 +7,7 @@ if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/xfce" ]]
 	then
 		xfce4-terminal -e "vim $1 $2"
 	fi
+if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/i3" ]]
+	then
+		vte -c "vim $1 $2"
+	fi
