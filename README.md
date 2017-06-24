@@ -6,6 +6,7 @@ Currently supporting default terminals of:
 - GNOME
 - i3-wm
 - KDE Plasma
+- MATE
 - XFCE 4
 
 More coming soon
