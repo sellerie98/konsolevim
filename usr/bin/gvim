@@ -21,6 +21,10 @@ if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/gnome" ]]
 	then
 		gnome-terminal -e "vim $1 $2 $3"
 	fi
+if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/mate" ]]
+	then
+		mate-terminal -e "vim $1 $2 $3"
+	fi
 
 
 else
