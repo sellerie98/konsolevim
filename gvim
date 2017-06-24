@@ -12,7 +12,17 @@ if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/xfce" ]]
 if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/i3" ]]
 	then
 		i3-sensible-terminal -e "vim $1 $2 $3"
-fi
+	fi
+if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/cinnamon" ]]
+	then
+		gnome-terminal -e "vim $1 $2 $3"
+	fi
+if [[ $(echo $DESKTOP_SESSION) = "/usr/share/xsessions/gnome" ]]
+	then
+		gnome-terminal -e "vim $1 $2 $3"
+	fi
+
+
 else
 $TERMINAL -e /usr/bin/vim $1 $2 $3
 fi
